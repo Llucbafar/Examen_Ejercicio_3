@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Blue
+  - Red
+  - Yellow
+  - Green
+  - ColorChanger
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Blue
+  - Red
+  - Yellow
+  - Green
+  - Limit
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 475930181
+    locked: 0
+  - name: Blue
+    uniqueID: 901891355
+    locked: 0
+  - name: Red
+    uniqueID: 1204573673
+    locked: 0
+  - name: Yellow
+    uniqueID: 2063521277
+    locked: 0
+  - name: Green
+    uniqueID: 3862096393
+    locked: 0
