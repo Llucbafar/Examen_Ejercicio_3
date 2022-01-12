@@ -12,6 +12,7 @@ ScriptsOnlyBuild:
     - UITimer
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
+    - Cinemachine.CinemachineConfiner
     - Cinemachine.CinemachineFramingTransposer
     - Cinemachine.CinemachinePipeline
     - Cinemachine.CinemachineVirtualCamera
@@ -86,6 +87,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2702}
     - Class: 114
       Script: {instanceID: 2754}
+    - Class: 114
+      Script: {instanceID: 2772}
     - Class: 114
       Script: {instanceID: 2842}
     - Class: 114

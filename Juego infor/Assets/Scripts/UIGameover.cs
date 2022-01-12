@@ -20,8 +20,8 @@ public class UIGameover : MonoBehaviour
 
     public void GameOver()
     {
-        txt.text = "GameOver"+"n/";
-        txt.text += "Press F to play again"+"n/";
+        txt.text = "GameOver"+"\n";
+        txt.text += "Press F to play again"+"\n";
         Uiscore.calculateScore();
         Time.timeScale = 0;
         finished = true;

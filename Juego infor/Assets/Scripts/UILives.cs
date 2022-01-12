@@ -14,7 +14,7 @@ public class UILives : MonoBehaviour
 
     void Start()
     {
-        lives = 3;
+        lives = 4;
         txt = gameObject.GetComponent<Text>();
         txt.text = "Lives: " + lives.ToString();
     }
