@@ -36,8 +36,6 @@ public class PlayerControler : MonoBehaviour
 
 	public UIGameover uigameover;
 
-	public ColorChanger colorChanger;
-
 
 	void Start ()
 	{
@@ -72,13 +70,19 @@ public class PlayerControler : MonoBehaviour
 
     }
 
+	void fire()
+    {
+        Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+    }
+
+
     void OnTriggerEnter2D (Collider2D col)
 	{
 
 		if (col.tag == "ColorChanger")
 		{
 			UIScore.points += 1;
-			UITimer.timeRemaining += 10;
+			UITimer.timeRemaining += 30;
 			if (UIScore.points == 15)
 			{
 				uigameover.win();
@@ -86,7 +90,7 @@ public class PlayerControler : MonoBehaviour
 
 		}
 
-		else if (col.tag != currentColor)
+		else if (col.tag != gameObject.tag)
 		{
 			uilives.RestLives();
 		}

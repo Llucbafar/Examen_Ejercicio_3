@@ -16,9 +16,9 @@ public class ColorChanger : MonoBehaviour
 
     public Color currentcolor;
 
-    private SpriteRenderer spre;
-
     public string colortag;
+
+    private SpriteRenderer spre;
 
     void Start()
     {
@@ -34,37 +34,40 @@ public class ColorChanger : MonoBehaviour
             case 0:
                 currentcolor = Blue;
                 spre.color = Blue;
+                colortag = "Blue";
                 break;
             case 1:
                 currentcolor = Yellow;
                 spre.color = Yellow;
+                colortag = "Yellow";
                 break;
             case 2:
                 currentcolor = Green;
                 spre.color = Green;
+                colortag = "Green";
                 break;
             case 3:
                 currentcolor = Red;
                 spre.color = Red;
+                colortag = "Red";
                 break;
         }
         StartCoroutine(WaitToChange());
     }
-
-    public void ChangePlayerColor()
-    {
-        playercontroler.sr.color = currentcolor;
-        playercontroler.tag = colortag;
-        Destroy(gameObject);
-    }
-
-public void ChangePlayerColor(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.layer == default)
         {
             ChangePlayerColor();
         }
     }
+    public void ChangePlayerColor()
+    {
+            playercontroler.sr.color = currentcolor;
+            playercontroler.tag = colortag;
+            Destroy(gameObject);
+    }
+
     IEnumerator WaitToChange()
     {
         yield return new WaitForSeconds(3);
