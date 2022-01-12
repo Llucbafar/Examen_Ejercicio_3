@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UITimer : MonoBehaviour
 {
-    public static float timeRemaining = 30;
+    public static float timeRemaining = 20;
 
      private Text txt;
 

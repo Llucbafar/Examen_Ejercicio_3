@@ -82,7 +82,7 @@ public class PlayerControler : MonoBehaviour
 		if (col.tag == "ColorChanger")
 		{
 			UIScore.points += 1;
-			UITimer.timeRemaining += 30;
+			UITimer.timeRemaining += 5;
 			if (UIScore.points == 15)
 			{
 				uigameover.win();
